@@ -52,10 +52,63 @@
   color: #ba0404;
 }
 
-.tarefa {
+.iconGroup {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.tarefa {
+  display: flex;
   padding: 8px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.popup {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blocoForm {
+  background: white;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
+}
+
+.blocoForm h3 {
+  font-size: 24px;
+}
+
+.blocoForm input {
+  margin: 20px 0;
+  font-size: 16px;
+  height: 30px;
+}
+
+.blocoForm button {
+  font-size: 16px;
+  border: none;
+  background: #04BA56;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trash {
+  color: #202020;
+  font-size: 16px;
   cursor: pointer;
 }
